@@ -1,217 +1,244 @@
+/* Estiliza o quadro principal da página */
 #Quadro {
-    border: 3px solid #333;
-    border-radius: 15px;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    background: linear-gradient(to bottom, lightblue, deepskyblue);
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto; 
-    position: relative; 
-    top: 0; 
-    left: 0; 
-    transform: none; 
+    border: 3px solid #333; /* Borda escura de 3px */
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    width: 150px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(to bottom, lightblue, deepskyblue); /* Gradiente azul */
+    font-family: 'Arial', sans-serif; /* Fonte Arial */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Centraliza e espaça */
+    position: relative; /* Permite posicionamento relativo */
+    top: 0; /* Sem deslocamento vertical */
+    left: 0; /* Sem deslocamento horizontal */
+    transform: none; /* Sem transformação */
 }
 
+/* Estiliza a área da fogueira */
 #Fogueira {
-    border: 3px solid #333;
-    border-radius: 15px;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    background: linear-gradient(to bottom, rgb(151, 121, 21), rgb(190, 206, 47));
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px auto; 
-    position: relative; 
-    top: 0; 
-    left: 0; 
+    border: 3px solid #333; /* Borda escura de 3px */
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 10px; /* Espaçamento interno */
+    width: 200px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+    background: linear-gradient(to bottom, rgb(151, 121, 21), rgb(190, 206, 47)); /* Gradiente dourado */
+    font-family: 'Arial', sans-serif; /* Fonte Arial */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px auto; /* Centraliza e espaça */
+    position: relative; /* Permite posicionamento relativo */
+    top: 0;
+    left: 0;
     transform: none;
 }
 
+/* Estiliza o menu de navegação */
 nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: #333; /* Fundo escuro */
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Remove estilos padrão da lista do menu */
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove marcadores */
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Exibe itens em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre itens */
 }
 
+/* Estiliza os links do menu */
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
 }
 
+/* Estiliza o rodapé */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: #333; /* Fundo escuro */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaço acima do rodapé */
 }
 
+/* Estiliza todas as seções */
 section {
-    padding: 20px;
-    margin: 20px auto;
-    text-align: center;
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Centraliza e espaça */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estiliza imagens dentro das seções */
 section img {
-    margin: 10px;
-    border: 2px solid #333;
-    border-radius: 10px;
+    margin: 10px; /* Espaço ao redor da imagem */
+    border: 2px solid #333; /* Borda escura */
+    border-radius: 10px; /* Cantos arredondados */
 }
 
+/* Estiliza o formulário */
 form {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    width: 300px;
-    text-align: left;
+    margin: 20px auto; /* Centraliza e espaça */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #333; /* Borda escura */
+    border-radius: 10px; /* Cantos arredondados */
+    width: 300px; /* Largura fixa */
+    text-align: left; /* Alinha texto à esquerda */
 }
 
+/* Estiliza os rótulos do formulário */
 form label {
-    display: block;
-    margin-bottom: 5px;
+    display: block; /* Exibe em bloco */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
 }
 
+/* Estiliza campos de entrada e textarea do formulário */
 form input, form textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%; /* Ocupa toda a largura */
+    margin-bottom: 10px; /* Espaço abaixo do campo */
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda clara */
+    border-radius: 5px; /* Cantos arredondados */
 }
 
+/* Estiliza o modo escuro */
 .dark-mode {
-    background-color: #121212;
-    color: white;
+    background-color: #121212; /* Fundo preto */
+    color: white; /* Texto branco */
     position: relative;
 }
 
+/* Estiliza a seção de depoimentos */
 #Testimonials {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 80%;
-    text-align: center;
+    background-color: #f9f9f9; /* Fundo claro */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda clara */
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 20px auto; /* Centraliza e espaça */
+    width: 80%; /* Largura relativa */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estiliza citações */
 blockquote {
-    font-style: italic;
-    margin: 10px 0;
+    font-style: italic; /* Texto itálico */
+    margin: 10px 0; /* Espaço vertical */
 }
 
+/* Estiliza autores das citações */
 cite {
-    display: block;
-    margin-top: 5px;
-    font-size: 14px;
-    color: #555;
+    display: block; /* Exibe em bloco */
+    margin-top: 5px; /* Espaço acima */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #555; /* Cor cinza */
 }
 
+/* Estiliza a seção hero (destaque) */
 #hero {
-    background: url('hero-image.jpg') no-repeat center center/cover; /* Replace with your image */
-    color: rgb(189, 61, 61);
-    text-align: center;
-    padding: 100px 20px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: url('hero-image.jpg') no-repeat center center/cover; /* Imagem de fundo */
+    color: rgb(189, 61, 61); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 100px 20px; /* Espaçamento interno */
+    height: 400px; /* Altura fixa */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
 }
 
+/* Estiliza o título da seção hero */
 #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 3rem; /* Tamanho grande */
+    margin-bottom: 10px; /* Espaço abaixo */
 }
 
+/* Estiliza o parágrafo da seção hero */
 #hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* Tamanho médio */
+    margin-bottom: 20px; /* Espaço abaixo */
 }
 
+/* Estiliza o botão da seção hero */
 #hero button {
-    background-color: deepskyblue;
-    color: rgb(182, 63, 63);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: deepskyblue; /* Fundo azul claro */
+    color: rgb(182, 63, 63); /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de mão */
 }
 
+/* Efeito ao passar o mouse no botão hero */
 #hero button:hover {
-    background-color: dodgerblue;
+    background-color: dodgerblue; /* Fundo azul mais escuro */
 }
 
+/* Estiliza o botão com tooltip */
 .tooltip {
-    position: relative;
+    position: relative; /* Permite posicionamento do tooltip */
     display: inline-block;
     cursor: pointer;
 }
 
+/* Estiliza o texto do tooltip */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 150px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position above the button */
-    left: 50%;
+    visibility: hidden; /* Esconde o texto inicialmente */
+    width: 150px; /* Largura fixa */
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 5px; /* Espaçamento interno */
+    position: absolute; /* Posicionamento absoluto */
+    z-index: 1; /* Sobrepõe outros elementos */
+    bottom: 125%; /* Posiciona acima do botão */
+    left: 50%; /* Centraliza horizontalmente */
     transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s;
+    opacity: 0; /* Invisível */
+    transition: opacity 0.3s; /* Transição suave */
 }
 
+/* Mostra o tooltip ao passar o mouse */
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
 
+/* Estiliza o cartão flip (frente e verso) */
 .flip-card {
     background-color: transparent;
     width: 200px;
     height: 200px;
-    perspective: 1000px;
+    perspective: 1000px; /* Profundidade para efeito 3D */
     margin: 20px auto;
 }
 
+/* Área interna do cartão flip */
 .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+    transition: transform 0.6s; /* Transição suave */
+    transform-style: preserve-3d; /* Mantém o efeito 3D */
 }
 
+/* Efeito de virar o cartão ao passar o mouse */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
+/* Frente e verso do cartão flip */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Esconde o verso quando não está visível */
     border: 1px solid #ddd;
     border-radius: 10px;
     display: flex;
@@ -219,10 +246,12 @@ cite {
     align-items: center;
 }
 
+/* Frente do cartão */
 .flip-card-front {
     background-color: lightblue;
 }
 
+/* Verso do cartão */
 .flip-card-back {
     background-color: deepskyblue;
     transform: rotateY(180deg);

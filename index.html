@@ -1,210 +1,235 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 6</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="d53726s-82ac5206-f4ea-4d97-ba97-c826f34f26ee.png" type="image/x-icon">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+    <title>Atividade 6</title> <!-- Título exibido na aba do navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS -->
+    <link rel="icon" href="d53726s-82ac5206-f4ea-4d97-ba97-c826f34f26ee.png" type="image/x-icon"> <!-- Ícone da aba do navegador -->
     <script>
+        // Função que cria e insere uma imagem dentro do quadro ao clicar no botão
         function showImage() {
-            const img = document.createElement('img');
-            img.src = 'wp9000049.jpg'; /* Replace with your image path */
-            img.alt = 'Imagem';
-            img.style.width = '150px';
-            img.style.height = '150px';
-            document.getElementById('Quadro').appendChild(img);
+            const img = document.createElement('img'); // Cria um elemento de imagem
+            img.src = 'wp9000049.jpg'; // Define o caminho da imagem
+            img.alt = 'Imagem'; // Texto alternativo para acessibilidade
+            img.style.width = '150px'; // Largura da imagem
+            img.style.height = '150px'; // Altura da imagem
+            document.getElementById('Quadro').appendChild(img); // Insere a imagem no quadro
         }
 
+        // Função que alterna entre modo claro e escuro
         function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-}
+            document.body.classList.toggle('dark-mode'); // Adiciona ou remove a classe dark-mode no body
+        }
     </script>
 </head>
 <body>
+    <!-- Menu de navegação principal do site -->
     <nav>
-    <ul>
-        <li><a href="#Quadro">Quadro</a></li>
-        <li><a href="#Fogueira">Fogueira</a></li>
-        <li><a href="#Contato">Contato</a></li>
-    </ul>
-</nav>
+        <ul>
+            <li><a href="#Quadro">Quadro</a></li> <!-- Link para a seção Quadro -->
+            <li><a href="#Fogueira">Fogueira</a></li> <!-- Link para a seção Fogueira -->
+            <li><a href="#Contato">Contato</a></li> <!-- Link para o rodapé Contato -->
+        </ul>
+    </nav>
+    
+    <!-- Área do quadro, exibe saudação e botão para mostrar imagem -->
     <div id="Quadro">
-        <p>Ola</p>
-        <button id="btn" onclick="showImage()">Clique aqui</button>
+        <p>Ola</p> <!-- Saudação -->
+        <button id="btn" onclick="showImage()">Clique aqui</button> <!-- Botão que chama a função showImage -->
     </div>
+    
+    <!-- Área da fogueira, exibe uma imagem estática -->
     <div id="Fogueira">
-        <img src="wp9000049.jpg" alt="Fogueira" width="200px" height="200px">
+        <img src="wp9000049.jpg" alt="Fogueira" width="200px" height="200px"> <!-- Imagem da fogueira -->
     </div>
 
-<section id="hero">
-    <h1>Bem-vindo ao Nosso Site</h1>
-    <p>Botão abaixo</p>
-    <button onclick="location.href='#Sobre'">Saiba Mais</button>
-</section>
+    <!-- Seção principal de boas-vindas (hero) -->
+    <section id="hero">
+        <h1>Bem-vindo ao Nosso Site</h1> <!-- Título principal -->
+        <p>Botão abaixo</p> <!-- Texto explicativo -->
+        <button onclick="location.href='#Sobre'">Saiba Mais</button> <!-- Botão que leva para a seção Sobre -->
+    </section>
 
-<section id="Galeria">
-    <h2>Galeria</h2>
-    <img src="image1.jpg" alt="Imagem 1" width="150">
-    <img src="image2.jpg" alt="Imagem 2" width="150">
-    <img src="image3.jpg" alt="Imagem 3" width="150">
-</section>
+    <!-- Seção de galeria de imagens -->
+    <section id="Galeria">
+        <h2>Galeria</h2> <!-- Título da galeria -->
+        <img src="image1.jpg" alt="Imagem 1" width="150"> <!-- Imagem 1 da galeria -->
+        <img src="image2.jpg" alt="Imagem 2" width="150"> <!-- Imagem 2 da galeria -->
+        <img src="image3.jpg" alt="Imagem 3" width="150"> <!-- Imagem 3 da galeria -->
+    </section>
 
-<form>
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="message">Mensagem:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    <br>
-    <button type="submit">Enviar</button>
-</form>
+    <!-- Formulário de contato com campos de nome, email e mensagem -->
+    <form>
+        <label for="name">Nome:</label> <!-- Rótulo do campo nome -->
+        <input type="text" id="name" name="name" required> <!-- Campo para digitar o nome -->
+        <br>
+        <label for="email">Email:</label> <!-- Rótulo do campo email -->
+        <input type="email" id="email" name="email" required> <!-- Campo para digitar o email -->
+        <br>
+        <label for="message">Mensagem:</label> <!-- Rótulo do campo mensagem -->
+        <textarea id="message" name="message" rows="4" required></textarea> <!-- Área para digitar a mensagem -->
+        <br>
+        <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+    </form>
 
-<button class="tooltip" style="margin-left: 40vw;">Clique aqui
-    <span class="tooltiptext">Este botão faz algo incrível!</span>
+    <!-- Botão com tooltip, mostra texto ao passar o mouse -->
+    <button class="tooltip" style="margin-left: 40vw;">Clique aqui
+        <span class="tooltiptext">Este botão faz algo incrível!</span> <!-- Texto do tooltip -->
+    </button>
 
-<button onclick="toggleDarkMode()" style="margin-left: 200px">Toggle Dark Mode</button>
+    <!-- Botão para alternar entre modo claro e escuro -->
+    <button onclick="toggleDarkMode()" style="margin-left: 200px">Toggle Dark Mode</button>
 
-<section id="Testimonials">
-    <h2>Depoimentos</h2>
-    <blockquote>
-        <p>"Este site é incrível! Adorei a experiência."</p>
-        <cite>- João Silva</cite>
-    </blockquote>
-    <blockquote>
-        <p>"Muito útil e bem organizado. Recomendo!"</p>
-        <cite>- Maria Oliveira</cite>
-    </blockquote>
-</section>
+    <!-- Seção de depoimentos dos usuários -->
+    <section id="Testimonials">
+        <h2>Depoimentos</h2> <!-- Título da seção -->
+        <blockquote>
+            <p>"Este site é incrível! Adorei a experiência."</p> <!-- Depoimento 1 -->
+            <cite>- João Silva</cite> <!-- Autor do depoimento 1 -->
+        </blockquote>
+        <blockquote>
+            <p>"Muito útil e bem organizado. Recomendo!"</p> <!-- Depoimento 2 -->
+            <cite>- Maria Oliveira</cite> <!-- Autor do depoimento 2 -->
+        </blockquote>
+    </section>
 
-<div class="flip-card">
-    <div class="flip-card-inner">
-        <div class="flip-card-front">
-            <h3>Frente</h3>
-        </div>
-        <div class="flip-card-back">
-            <h3>Verso</h3>
+    <!-- Cartão flip, mostra frente e verso ao passar o mouse -->
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h3>Frente</h3> <!-- Conteúdo da frente do cartão -->
+            </div>
+            <div class="flip-card-back">
+                <h3>Verso</h3> <!-- Conteúdo do verso do cartão -->
+            </div>
         </div>
     </div>
-</div>
 
-<section id="Mapa">
-    <h2>Nosso Local</h2>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509364!2d-122.4194154846813!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f0f5e5b%3A0x4c2c4b1e8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        loading="lazy">
-    </iframe>
-</section>
+    <!-- Seção com mapa incorporado do Google Maps -->
+    <section id="Mapa">
+        <h2>Nosso Local</h2> <!-- Título da seção -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509364!2d-122.4194154846813!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f0f5e5b%3A0x4c2c4b1e8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            loading="lazy">
+        </iframe> <!-- Mapa interativo -->
+    </section>
 
-<section id="Tabela" style="margin-left: 45vw;">
-    <h2 style="margin-right: 40vw;">Tabela de Preços</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Disponibilidade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Produto 1</td>
-                <td>R$ 50,00</td>
-                <td>Em Estoque</td>
-            </tr>
-            <tr>
-                <td>Produto 2</td>
-                <td>R$ 30,00</td>
-                <td>Fora de Estoque</td>
-            </tr>
-            <tr>
-                <td>Produto 3</td>
-                <td>R$ 20,00</td>
-                <td>Em Estoque</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+    <!-- Seção de tabela de preços -->
+    <section id="Tabela" style="margin-left: 45vw;">
+        <h2 style="margin-right: 40vw;">Tabela de Preços</h2> <!-- Título da tabela -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>R$ 50,00</td>
+                    <td>Em Estoque</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>R$ 30,00</td>
+                    <td>Fora de Estoque</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>R$ 20,00</td>
+                    <td>Em Estoque</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-<section id="Download">
-    <h2>Baixe Nosso Arquivo</h2>
-    <a href="Stephen Hawking - O universo em uma casca de noz.pdf" download>Baixar PDF</a>
-</section>
+    <!-- Seção para download de arquivo PDF -->
+    <section id="Download">
+        <h2>Baixe Nosso Arquivo</h2> <!-- Título da seção -->
+        <a href="Stephen Hawking - O universo em uma casca de noz.pdf" download>Baixar PDF</a> <!-- Link para download -->
+    </section>
 
-<section id="Ações">
-    <h2>Ações Rápidas</h2>
-    <button onclick="alert('Você clicou no botão!')">Clique Aqui</button>
-    <button onclick="location.href='#Contato'">Entre em Contato</button>
-</section>
+    <!-- Seção de ações rápidas com botões -->
+    <section id="Ações">
+        <h2>Ações Rápidas</h2> <!-- Título da seção -->
+        <button onclick="alert('Você clicou no botão!')">Clique Aqui</button> <!-- Botão que mostra alerta -->
+        <button onclick="location.href='#Contato'">Entre em Contato</button> <!-- Botão que leva ao contato -->
+    </section>
 
-<section id="Audio">
-    <h2>Ouça Nosso Podcast</h2>
-    <audio controls>
-        <source src="baixados (1).wav" type="audio/wav">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
-</section>
+    <!-- Seção de áudio com player -->
+    <section id="Audio">
+        <h2>Ouça Nosso Podcast</h2> <!-- Título da seção -->
+        <audio controls>
+            <source src="baixados (1).wav" type="audio/wav"> <!-- Fonte do áudio -->
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </section>
 
-<section id="Progresso">
-    <h2>Progresso do Projeto</h2>
-    <p>Estamos 70% concluídos!</p>
-    <progress value="70" max="100"></progress>
-</section>
+    <!-- Seção de progresso do projeto -->
+    <section id="Progresso">
+        <h2>Progresso do Projeto</h2> <!-- Título da seção -->
+        <p>Estamos 70% concluídos!</p> <!-- Texto explicativo -->
+        <progress value="70" max="100"></progress> <!-- Barra de progresso -->
+    </section>
 
-<section id="URL">
-    <h2>Insira um Link</h2>
-    <form>
-        <label for="link">Seu site:</label>
-        <input type="url" id="link" name="link" placeholder="https://">
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+    <!-- Seção para inserir um link (URL) -->
+    <section id="URL">
+        <h2>Insira um Link</h2> <!-- Título da seção -->
+        <form>
+            <label for="link">Seu site:</label> <!-- Rótulo do campo -->
+            <input type="url" id="link" name="link" placeholder="https://"> <!-- Campo para inserir URL -->
+            <button type="submit">Enviar</button> <!-- Botão para enviar -->
+        </form>
+    </section>
 
-<section id="Radio">
-    <h2>Escolha uma Opção</h2>
-    <form>
-        <input type="radio" id="opcao1" name="opcao" value="1">
-        <label for="opcao1" style="margin-left: 127px">Opção 1</label>
-        <br>
-        <input type="radio" id="opcao2" name="opcao" value="2">
-        <label for="opcao2" style="margin-left: 127px">Opção 2</label>
-        <br>
-        <input type="radio" id="opcao3" name="opcao" value="3">
-        <label for="opcao3" style="margin-left: 127px">Opção 3</label>
-        <br>
-        <button type="submit" style="margin-left: 127px">Enviar</button>
-    </form>
-</section>
+    <!-- Seção de radio buttons para escolha única -->
+    <section id="Radio">
+        <h2>Escolha uma Opção</h2> <!-- Título da seção -->
+        <form>
+            <input type="radio" id="opcao1" name="opcao" value="1">
+            <label for="opcao1" style="margin-left: 127px">Opção 1</label>
+            <br>
+            <input type="radio" id="opcao2" name="opcao" value="2">
+            <label for="opcao2" style="margin-left: 127px">Opção 2</label>
+            <br>
+            <input type="radio" id="opcao3" name="opcao" value="3">
+            <label for="opcao3" style="margin-left: 127px">Opção 3</label>
+            <br>
+            <button type="submit" style="margin-left: 127px">Enviar</button>
+        </form>
+    </section>
 
-<section id="Checkbox">
-    <h2>Escolha Suas Preferências</h2>
-    <form>
-        <input type="checkbox" id="preferencia1" name="preferencia" value="1">
-        <label for="preferencia1" style="margin-left: 120px;">Preferência 1</label>
-        <br>
-        <input type="checkbox" id="preferencia2" name="preferencia" value="2">
-        <label for="preferencia2" style="margin-left: 120px;">Preferência 2</label>
-        <br>
-        <input type="checkbox" id="preferencia3" name="preferencia" value="3">
-        <label for="preferencia3" style="margin-left: 120px;">Preferência 3</label>
-        <br>
-        <button type="submit" style="margin-left: 120px;">Enviar</button>
-    </form>
-</section>
+    <!-- Seção de checkboxes para escolha múltipla -->
+    <section id="Checkbox">
+        <h2>Escolha Suas Preferências</h2> <!-- Título da seção -->
+        <form>
+            <input type="checkbox" id="preferencia1" name="preferencia" value="1">
+            <label for="preferencia1" style="margin-left: 120px;">Preferência 1</label>
+            <br>
+            <input type="checkbox" id="preferencia2" name="preferencia" value="2">
+            <label for="preferencia2" style="margin-left: 120px;">Preferência 2</label>
+            <br>
+            <input type="checkbox" id="preferencia3" name="preferencia" value="3">
+            <label for="preferencia3" style="margin-left: 120px;">Preferência 3</label>
+            <br>
+            <button type="submit" style="margin-left: 120px;">Enviar</button>
+        </form>
+    </section>
 
 </body>
 
+<!-- Rodapé do site com informações de contato e redes sociais -->
 <footer id="Contato">
-    <p>Contato: exemplo@email.com</p>
+    <p>Contato: exemplo@email.com</p> <!-- Email de contato -->
     <p>Siga-nos: 
-        <a href="https://facebook.com" target="_blank">Facebook</a> 
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a> <!-- Link para Facebook -->
+        <a href="https://instagram.com" target="_blank">Instagram</a> <!-- Link para Instagram -->
     </p>
 </footer>
 </html>
