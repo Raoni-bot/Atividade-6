@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="d53726s-82ac5206-f4ea-4d97-ba97-c826f34f26ee.png" type="image/x-icon">
+    <script>
+        function showImage() {
+            const img = document.createElement('img');
+            img.src = 'wp9000049.jpg'; /* Replace with your image path */
+            img.alt = 'Imagem';
+            img.style.width = '150px';
+            img.style.height = '150px';
+            document.getElementById('Quadro').appendChild(img);
+        }
+
+        function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+}
+    </script>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#Quadro">Quadro</a></li>
+        <li><a href="#Fogueira">Fogueira</a></li>
+        <li><a href="#Contato">Contato</a></li>
+    </ul>
+</nav>
+    <div id="Quadro">
+        <p>Ola</p>
+        <button id="btn" onclick="showImage()">Clique aqui</button>
+    </div>
+    <div id="Fogueira">
+        <img src="wp9000049.jpg" alt="Fogueira" width="200px" height="200px">
+    </div>
+
+    <section id="Sobre">
+    <h2>Sobre Nós</h2>
+    <p>Bem-vindo ao nosso site! Aqui você encontra informações sobre nossos projetos e atividades.</p>
+</section>
+
+<section id="Galeria">
+    <h2>Galeria</h2>
+    <img src="image1.jpg" alt="Imagem 1" width="150">
+    <img src="image2.jpg" alt="Imagem 2" width="150">
+    <img src="image3.jpg" alt="Imagem 3" width="150">
+</section>
+
+<form>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
+
+<button onclick="toggleDarkMode()" style="margin-left: 200px">Toggle Dark Mode</button>
+
+<section id="Testimonials">
+    <h2>Depoimentos</h2>
+    <blockquote>
+        <p>"Este site é incrível! Adorei a experiência."</p>
+        <cite>- João Silva</cite>
+    </blockquote>
+    <blockquote>
+        <p>"Muito útil e bem organizado. Recomendo!"</p>
+        <cite>- Maria Oliveira</cite>
+    </blockquote>
+</section>
+</body>
+
+<footer id="Contato">
+    <p>Contato: exemplo@email.com</p>
+    <p>Siga-nos: 
+        <a href="https://facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </p>
+</footer>
+</html>
