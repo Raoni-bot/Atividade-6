@@ -37,9 +37,10 @@
         <img src="wp9000049.jpg" alt="Fogueira" width="200px" height="200px">
     </div>
 
-    <section id="Sobre">
-    <h2>Sobre Nós</h2>
-    <p>Bem-vindo ao nosso site! Aqui você encontra informações sobre nossos projetos e atividades.</p>
+<section id="hero">
+    <h1>Bem-vindo ao Nosso Site</h1>
+    <p>Botão abaixo</p>
+    <button onclick="location.href='#Sobre'">Saiba Mais</button>
 </section>
 
 <section id="Galeria">
@@ -62,6 +63,9 @@
     <button type="submit">Enviar</button>
 </form>
 
+<button class="tooltip" style="margin-left: 40vw;">Clique aqui
+    <span class="tooltiptext">Este botão faz algo incrível!</span>
+
 <button onclick="toggleDarkMode()" style="margin-left: 200px">Toggle Dark Mode</button>
 
 <section id="Testimonials">
@@ -75,12 +79,131 @@
         <cite>- Maria Oliveira</cite>
     </blockquote>
 </section>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h3>Frente</h3>
+        </div>
+        <div class="flip-card-back">
+            <h3>Verso</h3>
+        </div>
+    </div>
+</div>
+
+<section id="Mapa">
+    <h2>Nosso Local</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509364!2d-122.4194154846813!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f0f5e5b%3A0x4c2c4b1e8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        loading="lazy">
+    </iframe>
+</section>
+
+<section id="Tabela" style="margin-left: 45vw;">
+    <h2 style="margin-right: 40vw;">Tabela de Preços</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>R$ 50,00</td>
+                <td>Em Estoque</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>R$ 30,00</td>
+                <td>Fora de Estoque</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>R$ 20,00</td>
+                <td>Em Estoque</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="Download">
+    <h2>Baixe Nosso Arquivo</h2>
+    <a href="Stephen Hawking - O universo em uma casca de noz.pdf" download>Baixar PDF</a>
+</section>
+
+<section id="Ações">
+    <h2>Ações Rápidas</h2>
+    <button onclick="alert('Você clicou no botão!')">Clique Aqui</button>
+    <button onclick="location.href='#Contato'">Entre em Contato</button>
+</section>
+
+<section id="Audio">
+    <h2>Ouça Nosso Podcast</h2>
+    <audio controls>
+        <source src="baixados (1).wav" type="audio/wav">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+</section>
+
+<section id="Progresso">
+    <h2>Progresso do Projeto</h2>
+    <p>Estamos 70% concluídos!</p>
+    <progress value="70" max="100"></progress>
+</section>
+
+<section id="URL">
+    <h2>Insira um Link</h2>
+    <form>
+        <label for="link">Seu site:</label>
+        <input type="url" id="link" name="link" placeholder="https://">
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<section id="Radio">
+    <h2>Escolha uma Opção</h2>
+    <form>
+        <input type="radio" id="opcao1" name="opcao" value="1">
+        <label for="opcao1" style="margin-left: 127px">Opção 1</label>
+        <br>
+        <input type="radio" id="opcao2" name="opcao" value="2">
+        <label for="opcao2" style="margin-left: 127px">Opção 2</label>
+        <br>
+        <input type="radio" id="opcao3" name="opcao" value="3">
+        <label for="opcao3" style="margin-left: 127px">Opção 3</label>
+        <br>
+        <button type="submit" style="margin-left: 127px">Enviar</button>
+    </form>
+</section>
+
+<section id="Checkbox">
+    <h2>Escolha Suas Preferências</h2>
+    <form>
+        <input type="checkbox" id="preferencia1" name="preferencia" value="1">
+        <label for="preferencia1" style="margin-left: 120px;">Preferência 1</label>
+        <br>
+        <input type="checkbox" id="preferencia2" name="preferencia" value="2">
+        <label for="preferencia2" style="margin-left: 120px;">Preferência 2</label>
+        <br>
+        <input type="checkbox" id="preferencia3" name="preferencia" value="3">
+        <label for="preferencia3" style="margin-left: 120px;">Preferência 3</label>
+        <br>
+        <button type="submit" style="margin-left: 120px;">Enviar</button>
+    </form>
+</section>
+
 </body>
 
 <footer id="Contato">
     <p>Contato: exemplo@email.com</p>
     <p>Siga-nos: 
-        <a href="https://facebook.com" target="_blank">Facebook</a> | 
+        <a href="https://facebook.com" target="_blank">Facebook</a> 
         <a href="https://instagram.com" target="_blank">Instagram</a>
     </p>
 </footer>
